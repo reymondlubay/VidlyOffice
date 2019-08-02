@@ -193,6 +193,14 @@
     <Compile Include="Migrations\201908020601528_NameConvensionCustomer.Designer.cs">
       <DependentUpon>201908020601528_NameConvensionCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201908020643231_ApplyAnnotationToCustomername.cs" />
+    <Compile Include="Migrations\201908020643231_ApplyAnnotationToCustomername.Designer.cs">
+      <DependentUpon>201908020643231_ApplyAnnotationToCustomername.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201908020654507_ApplyAnnotationToCustomerNameLength.cs" />
+    <Compile Include="Migrations\201908020654507_ApplyAnnotationToCustomerNameLength.Designer.cs">
+      <DependentUpon>201908020654507_ApplyAnnotationToCustomerNameLength.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -294,6 +302,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201908020601528_NameConvensionCustomer.resx">
       <DependentUpon>201908020601528_NameConvensionCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908020643231_ApplyAnnotationToCustomername.resx">
+      <DependentUpon>201908020643231_ApplyAnnotationToCustomername.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908020654507_ApplyAnnotationToCustomerNameLength.resx">
+      <DependentUpon>201908020654507_ApplyAnnotationToCustomerNameLength.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
