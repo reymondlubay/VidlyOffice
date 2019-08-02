@@ -173,13 +173,39 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201908020442220_InitialModel.cs" />
+    <Compile Include="Migrations\201908020442220_InitialModel.Designer.cs">
+      <DependentUpon>201908020442220_InitialModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201908020530180_IsSubscribedToNewsLetter.cs" />
+    <Compile Include="Migrations\201908020530180_IsSubscribedToNewsLetter.Designer.cs">
+      <DependentUpon>201908020530180_IsSubscribedToNewsLetter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201908020541235_AddMembershipType.cs" />
+    <Compile Include="Migrations\201908020541235_AddMembershipType.Designer.cs">
+      <DependentUpon>201908020541235_AddMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201908020543257_PopulateMembershipType.cs" />
+    <Compile Include="Migrations\201908020543257_PopulateMembershipType.Designer.cs">
+      <DependentUpon>201908020543257_PopulateMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201908020601528_NameConvensionCustomer.cs" />
+    <Compile Include="Migrations\201908020601528_NameConvensionCustomer.Designer.cs">
+      <DependentUpon>201908020601528_NameConvensionCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\MembershipType.cs" />
+    <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\RandomMovieViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-lumen.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -252,6 +278,23 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201908020442220_InitialModel.resx">
+      <DependentUpon>201908020442220_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908020530180_IsSubscribedToNewsLetter.resx">
+      <DependentUpon>201908020530180_IsSubscribedToNewsLetter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908020541235_AddMembershipType.resx">
+      <DependentUpon>201908020541235_AddMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908020543257_PopulateMembershipType.resx">
+      <DependentUpon>201908020543257_PopulateMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908020601528_NameConvensionCustomer.resx">
+      <DependentUpon>201908020601528_NameConvensionCustomer.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
